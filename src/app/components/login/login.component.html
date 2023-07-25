@@ -1,0 +1,75 @@
+<!-- <div class="bootstrap-wrapper">
+
+    <div class="container mt">
+
+        <div class="row text-center">
+
+            <div class="col-md-8 offset-md-1">
+                <img class="img-fluid" style="width: 260px" src="/assets/Screenshot_from_2023-07-08_12-42-59-removebg-preview (3).png" alt="">
+
+                <h3>An Argonautic Hub for Empowering explorers</h3>
+
+                <h3>Please login to your account</h3>
+
+                <form (ngSubmit)="OnSubmit()">
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input name="username" [(ngModel)]="credentials.email" required type="text" matInput />
+
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input name="username" [(ngModel)]="credentials.password" required type="password" matInput />
+
+                        </mat-form-field>
+
+                        <div class="container text-center">
+                            <button type="submit" mat-raised-button color="accent"> Log In</button>
+                        </div>
+                        
+                    
+                </form>
+
+                {{credentials | json}}
+
+            </div>
+        </div>
+    </div>
+
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+<body id="particles-js"></body>
+<div class="animated bounceInDown">
+  <div class="container">
+    <span class="error animated tada" id="msg"></span>
+    <form name="form1" class="box" (ngSubmit)="OnSubmit()">
+      <h4>Argusphere<span>Dashboard</span></h4>
+      <h5>Sign in to your account.</h5>
+      
+        <input type="text" [(ngModel)]="credentials.email" name="email" placeholder="Email" autocomplete="off">
+        <i class="typcn typcn-eye" id="eye"></i>
+        <input type="password" [(ngModel)]="credentials.password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
+        
+        <label>
+          <input type="checkbox">
+          <span></span>
+          <small class="rmb">Remember me</small>
+        </label>
+        <a href="#" class="forgetpass">Forget Password?</a>
+        <input type="submit" value="Sign in" class="btn1">
+      </form>
+        <a href="/signup" class="dnthave">Don’t have an account? Sign up</a>
+  
+</div>

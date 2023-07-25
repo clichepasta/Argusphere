@@ -1,0 +1,33 @@
+
+<body id="particles-js"></body>
+<div class="animated bounceInDown">
+  <div class="container">
+    <span class="error animated tada" id="msg"></span>
+    <form name="form1" (ngSubmit)="onSubmit()" class="box" >
+      <h4>Signup</h4>
+      
+      <input type="text" [(ngModel)]="credentials.name" name="name" placeholder="Name" autocomplete="off">
+        <input type="text" [(ngModel)]="credentials.email" name="email" placeholder="Email" autocomplete="off">
+        <i class="typcn typcn-eye" id="eye"></i>
+        <input type="password" [(ngModel)]="credentials.password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
+        <input type="password" [(ngModel)]="comformPassword" name="password" placeholder="Conform Passsword" id="pwd" autocomplete="off">
+        
+        <label for="gender">Gender:</label>
+        <select [(ngModel)]="credentials.gender" name="gender">
+          <option value="">Please select one…</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          
+          <option value="other">Other</option>
+          
+        </select>
+        {{credentials|json}}
+        
+        <input type="submit" value="Sign up" class="btn1">
+
+        
+
+      </form>
+        
+  
+</div>
